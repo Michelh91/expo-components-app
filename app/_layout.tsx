@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import {
   DarkTheme,
   DefaultTheme,
@@ -6,19 +8,15 @@ import {
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
 
+import 'react-native-reanimated';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
-import { Text, View } from 'react-native';
+import { useThemeColor } from '@/hooks/useThemeColor';
+import { allRoutes } from '@/constants/Routes';
 
 import '../global.css';
-import { useThemeColor } from '@/hooks/useThemeColor';
-import ThemedView from '@/presentation/shared/ThemedView';
-import ThemedText from '@/presentation/shared/ThemedText';
-import { allRoutes } from '@/constants/Routes';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
