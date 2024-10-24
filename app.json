@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "components-app",
+    "name": "Componentes RN",
     "slug": "components-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.fernandoherrera.expo_components_app"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +32,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "27ac4d15-86a3-4f7f-95a2-709ef3563fdd"
+      }
     }
   }
 }
